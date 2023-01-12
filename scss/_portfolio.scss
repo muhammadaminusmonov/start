@@ -1,0 +1,39 @@
+//portfolio
+body {
+    line-height: 125%;
+}
+
+.portfolio__main {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    h5 {
+        font-size: 16px;
+        color: #74C69D;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+        max-width: 411px;
+    }
+    div {
+        margin-top: 82px !important;
+        gap: 55px;
+        img {
+            padding: 0 !important;
+            max-width: 570px !important;
+            max-height: 334.54px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio__main {
+        padding-left: 20px;
+        padding-right: 20px;
+        h2 {
+            font-size: 24px;
+        }
+    }
+}

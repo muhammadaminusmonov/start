@@ -12,45 +12,44 @@
     <title>Start</title>
 </head>
 
+<!-- body -->
+
 <body>
-    <header class="header__bg">
-        <div class="header container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon text-light"></span>
-                    </button>
-                    <div class="collapse navbar-collapse header__link--wrapper" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__link">
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+
+    <!-- header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg" style="--bs-navbar-padding-y: none; --bs-navbar-active-color: none;">
+            <div class="container d-flex justify-content-between w-100">
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" class="nav__img"></a>
+                <span class="navbar-toggler-icon navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: none !important;"></span>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="flex-grow: 0;">
+                    <ul class="navbar-nav nav__link--wrapper">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding: 0;" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding: 0;" aria-current="page" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding: 0;" aria-current="page" href="./service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding: 0;" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <div class="card mb-3 mw-100" style="max-width: 540px; --bs-card-border-color: navbarSupportedContent; --bs-card-bg: none;">
-                <div class="row g-0 text-light header__content">
-                    <div class="card-body header__text--card">
-                        <p class="card-text">WELCOME</p>
-                        <h5 class="card-title header__title" style="--bs-card-title-spacer-y: none;">Lorem ipsum dolor sit amet consectetur </h5>
-                        <p class="card-text"><small class=" text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</small></p>
-                        <button type="button" class="btn btn-light" style="max-width: 170px;">Explore</button>
-                    </div>
-                    <div class="col-md-4 header__wrapper--img">
-                        <img src="./images/Group.png" class="img-fluid rounded-start header__img " alt="img">
-                    </div>
-                </div>
+            </div>
+        </nav>
+        <div class="header__banner d-flex justify-content-between flex-lg-row flex-column container">
+            <div class="header__content">
+                <h4>WELCOME</h4>
+                <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <button type="button" class="btn btn-light">Explore</button>
+            </div>
+            <div class="header__img">
+                <img src="./images/Group.png" alt="img" class="header__img w-100">
             </div>
         </div>
     </header>
@@ -59,34 +58,95 @@
 
     <main>
 
-        <!-- company -->
+        <!-- desc -->
 
-        <section class="container company">
-            <div class="card text-center mb-5 mt-5 w-100 company__wrpper align-items-center" style="width: 18rem; --bs-card-border-color: none;">
-                <p class="text-success company__desc" style="width: 411px;">partners</p>
-                <h5 class="card-title mb-3 company__title" style="width: 411px;">Special title treatment</h5>
-                <p class="card-text company__text" style="width: 411px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <section class="container desc d-flex flex-column align-items-center text-center">
+            <h5 class="fw-bold">partners</h5>
+            <h1 class="mt-3 fw-bold">Lorem Ipsum Dolor</h1>
+            <p class="mt-3 fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="desc__link--wrapper d-flex flex-lg-row flex-column justify-content-lg-between align-items-center w-100">
+                <a href="#"><img class="google" src="./images/google.png" alt="img"></a>
+                <a href="#"><img class="microsoft" src="./images/microsoft.png" alt="img"></a>
+                <a href="#"><img class="airbnb" src="./images/airbnb.png" alt="img"></a>
+                <a href="#"><img class="facebook" src="./images/facebook.png" alt="img"></a>
+                <a href="#"><img class="spotify" src="./images/spotify.png" alt="img"></a>
+            </div>
+            <button type="button" class="btn btn-dark">Learn More</button>
+        </section>
 
-                <a href="#" class="btn btn-primary company__button" style="width: 411px;">Go somewhere</a>
+        <!-- content -->
+
+        <section class="container content d-flex flex-column">
+            <div class="content__card d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <div class="content__img w-50 h-100">
+                    <img src="./images/Group_2.png" alt="img" class="content__img w-100 h-100">
+                </div>
+                <div class="content__content">
+                    <h2 class="fw-bold">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="fw-normal mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                    <button type="button" class="btn btn-dark mt-3">Learn More</button>
+                </div>
+            </div>
+            <div class="content__card d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
+                <div class="content__content">
+                    <h2 class="fw-bold">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="fw-normal mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                    <button type="button" class="btn btn-dark mt-3">Learn More</button>
+                </div>
+                <div class="content__img w-50 h-100">
+                    <img src="./images/Group_3.png" alt="img" class="content__img w-100 h-100">
+                </div>
             </div>
         </section>
+
+        <!-- talent -->
+
+        <section class="container talent d-flex flex-column align-items-center text-center">
+            <h5 class="fw-bold">team</h5>
+            <h2 class="fw-bold mt-3">Our Talents</h2>
+            <p class="fw-normal mt-3">Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,</p>
+            <div class="talent__wrapper--card w-100 d-flex flex-lg-row flex-column justify-content-lg-between align-items-center">
+                <div class="talent__card ">
+                    <img src="./images/girl.png" alt="img">
+                    <h3 class="fw-bold">Peg Legge</h3>
+                    <p class="fw-normal">CEO</p>
+                </div>
+                <div class="talent__card ">
+                    <img src="./images/boy.png" alt="img">
+                    <h3 class="fw-bold">Peg Legge</h3>
+                    <p class="fw-normal">CTO</p>
+                </div>
+                <div class="talent__card ">
+                    <img src="./images/girl_with_glasses.png" alt="img">
+                    <h3 class="fw-bold">Alexandra Stolz</h3>
+                    <p class="fw-normal">DESIGNER</p>
+                </div>
+                <div class="talent__card ">
+                    <img src="./images/girl_or_boy.png" alt="img">
+                    <h3 class="fw-bold">Janet Bray</h3>
+                    <p class="fw-normal">DEVELOPER</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-dark mt-3">View Team</button>
+        </section>
     </main>
+
     <!-- footer -->
 
     <footer>
-        <div>
-
+        <div class="footer container d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+            <div class="footer__wrapper--links d-flex">
+                <a href="#"><i class="bi bi-facebook text-light"></i></a>
+                <a href="#"><i class="bi bi-instagram text-light"></i></a>
+                <a href="#"><i class="bi bi-twitter text-light"></i></a>
+                <a href="#"><i class="bi bi-pinterest text-light"></i></a>
+                <a href="#"><i class="bi bi-tiktok text-light"></i></a>
+                <a href="#"><i class="bi bi-whatsapp text-light"></i></a>
+                <a href="#"><i class="bi bi-youtube text-light"></i></a>
+            </div>
+            <p class="text-light fw-normal">© Start, 2022. All rights reserved.</p>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
 
 
 

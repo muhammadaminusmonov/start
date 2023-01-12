@@ -1,0 +1,67 @@
+// contact
+body {
+    line-height: 125%;
+}
+
+.contact__main {
+    padding-top: 30px;
+    padding-bottom: 93px;
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+        max-width: 411px;
+    }
+    .contact__wrapper {
+        margin-top: 67px;
+        gap: 30px;
+        padding: 0 !important;
+        form {
+            padding: 0 !important;
+            width: 575px !important;
+            gap: 21px !important;
+            div {
+                gap: 16px;
+                label {
+                    font-size: 20px;
+                }
+                .input {
+                    height: 38px;
+                }
+                .textarea {
+                    height: 75px;
+                }
+            }
+            button {
+                @include button;
+                height: 48px;
+                font-size: 20px;
+                width: 100%;
+            }
+        }
+        iframe {
+            padding: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact__main {
+        padding: 36px 20px 59px 20px;
+        .contact__wrapper {
+            form {
+                max-width: 100%;
+                order: 2;
+                button {
+                    margin-top: 9px;
+                }
+            }
+            iframe {
+                max-width: 100%;
+                height: 235px;
+                order: 1;
+            }
+        }
+    }
+}

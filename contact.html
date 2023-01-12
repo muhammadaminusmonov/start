@@ -45,19 +45,27 @@
 
     <!-- main -->
 
-    <main class="portfolio__main container d-flex flex-column align-items-center text-center">
-        <h5 class="fw-bold">Works</h5>
-        <h2 class="fw-bold mt-3">Portfolio</h2>
-        <p class="fw-normal mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <div class="row row-cols-1 row-cols-lg-2 w-100 justify-content-center">
-            <img src="./images/portfolio_1.png" alt="img">
-            <img src="./images/portfolio_2.png" alt="img">
-            <img src="./images/portfolio_3.png" alt="img">
-            <img src="./images/portfolio_4.png" alt="img">
-            <img src="./images/portfolio_5.png" alt="img">
-            <img src="./images/portfolio_6.png" alt="img">
-            <img src="./images/portfolio_7.png" alt="img">
-            <img src="./images/portfolio_8.png" alt="img">
+    <main class="contact__main container d-flex flex-column align-items-center ">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="fw-normal mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="d-flex flex-column flex-lg-row align-items-center contact__wrapper w-100">
+            <form class="d-flex flex-column fw-normal ">
+                <div class="d-flex flex-column">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control input w-100">
+                </div>
+                <div class="d-flex flex-column">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control input w-100">
+                </div>
+                <div class="d-flex flex-column">
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message" class="form-control textarea w-100"></textarea>
+                </div>
+                <button type="submit" class=" btn btn-dark fw-normal">Submit</button>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.175874384668!2d-71.09634868458272!3d42.3600909791869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370aaf51a6a87%3A0xd0e08ea5b308203c!2sMassachusetts%20Institute%20of%20Technology!5e0!3m2!1sen!2s!4v1673459115586!5m2!1sen!2s"
+                width="575" height="384" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
 

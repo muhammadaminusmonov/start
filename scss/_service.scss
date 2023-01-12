@@ -1,0 +1,72 @@
+// service
+body {
+    line-height: 125%;
+}
+
+.service__main {
+    padding-top: 35px;
+    padding-bottom: 135px;
+    h5 {
+        color: #74C69D;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        max-width: 411px;
+        font-size: 20px;
+    }
+    .wrapper {
+        gap: 105px;
+        margin-top: 78px;
+        .main__card {
+            padding: 46px 30px;
+            box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            h5 {
+                font-size: 15px;
+            }
+            h1 {
+                font-size: 40px;
+                span {
+                    font-size: 15px;
+                    color: rgba(33, 37, 41, 0.5);
+                }
+            }
+            p {
+                margin-top: 10px;
+                font-size: 15px;
+                color: rgba(33, 37, 41, 0.5);
+            }
+            div {
+                margin-top: 52px;
+                gap: 11px;
+                p {
+                    gap: 11px;
+                    font-size: 15px;
+                    color: #212529;
+                    i {
+                        color: #74C69D;
+                    }
+                }
+            }
+            button {
+                margin-top: 45px;
+                @include button;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service__main {
+        padding: 21px 20px 68px 20px;
+        h2 {
+            font-size: 24px;
+        }
+        .wrapper {
+            gap: 50px;
+        }
+    }
+}

@@ -1,0 +1,247 @@
+/* header */
+
+header {
+    color: #ffffff;
+    background: #74C69D;
+    nav {
+        background: #74C69D;
+        padding-top: 35px !important;
+        padding-bottom: 40px !important;
+        .nav__img {
+            width: 187px;
+            height: 50px;
+        }
+        .nav__link--wrapper {
+            gap: 30px;
+        }
+    }
+    .header__banner {
+        padding-bottom: 82px;
+        .header__content {
+            max-width: 416px;
+            h4 {
+                font-weight: 700;
+                font-size: 16px;
+            }
+            h1 {
+                margin-top: 15px;
+                font-weight: 700;
+                font-size: 40px;
+            }
+            p {
+                margin-top: 15px;
+                font-weight: 400;
+                font-size: 15px;
+            }
+            button {
+                margin-top: 25px;
+                @include button;
+                background: #FFFFFF;
+            }
+        }
+        .header__img {
+            max-width: 644.28px;
+            max-height: 378.13px;
+        }
+    }
+}
+
+// main
+// desc
+.desc {
+    padding-top: 60px;
+    h5 {
+        color: #74C69D;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    &__link--wrapper {
+        margin-top: 55px;
+        .google {
+            width: 152.64px;
+            height: 50px;
+        }
+        .microsoft {
+            width: 210.85px;
+            height: 45px;
+        }
+        .airbnb {
+            width: 160.29px;
+            height: 50px;
+        }
+        .facebook {
+            width: 196.38px;
+            height: 38px;
+        }
+        .spotify {
+            width: 166.82px;
+            height: 50px;
+        }
+    }
+    button {
+        margin-top: 55px;
+        @include button;
+    }
+}
+
+// content
+.content {
+    margin-top: 73px;
+    gap: 73px;
+    &__card {
+        .content__content {
+            max-width: 470px;
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 15px;
+            }
+            button {
+                margin-top: 1rem;
+                @include button;
+            }
+        }
+    }
+}
+
+// talent
+.talent {
+    padding-top: 102px;
+    padding-bottom: 54px;
+    h5 {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .talent__wrapper--card {
+        margin-top: 45px;
+        .talent__card {
+            padding: 20px 25px;
+            box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            img {
+                width: 175px;
+                height: 175px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+            h3 {
+                margin-top: 19px;
+                font-size: 24px;
+            }
+            p {
+                margin-top: 17px;
+                font-size: 15px;
+                color: rgba(33, 37, 41, 0.75);
+            }
+        }
+    }
+    button {
+        margin-top: 45px !important;
+        @include button;
+    }
+}
+
+// footer 
+footer {
+    padding: 50px 0;
+    background-color: #74C69D;
+}
+
+.footer {
+    font-size: 20px;
+    .footer__wrapper--links {
+        gap: 20px;
+    }
+}
+
+// responsive
+@media screen and (max-width: 992px) {
+    header {
+        padding-left: 6px;
+        padding-right: 6px;
+        nav {
+            padding-top: 21px !important;
+            padding-bottom: 21px !important;
+            .nav__img {
+                width: 129px;
+                height: 38px;
+            }
+            nav button span,
+            nav button {
+                border: none;
+                width: 24.06px;
+                height: 19.69px;
+            }
+        }
+        .header__banner {
+            padding-bottom: 40px;
+            .header__content {
+                order: 2;
+                h1 {
+                    font-size: 28px;
+                }
+            }
+            .header__img {
+                order: 1;
+            }
+        }
+    }
+    .desc {
+        padding-left: 20px;
+        padding-right: 20px;
+        h1 {
+            font-size: 24px;
+        }
+        &__link--wrapper {
+            gap: 40px;
+        }
+    }
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+        &__card {
+            gap: 30px;
+            .content__img {
+                order: 1;
+                width: 100% !important;
+            }
+            .content__content {
+                order: 2;
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .talent {
+        padding: 40px 20px;
+        h2 {
+            font-size: 24px;
+        }
+        .talent__wrapper--card {
+            gap: 35px;
+            .talent__card {
+                width: 279px;
+                padding: 20px 40px;
+            }
+        }
+    }
+    footer {
+        padding: 30px 20px;
+        .footer {
+            gap: 20px;
+        }
+    }
+}
